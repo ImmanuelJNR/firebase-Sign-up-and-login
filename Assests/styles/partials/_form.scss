@@ -1,0 +1,270 @@
+.form-body {
+    // background-color: #f0f0f0;
+    // background-color: #F1F5F9;
+    background-color:  #F9FAFB;
+    @include Display($display: flex, $justify-content: center, $align-items: center);
+    height: 100vh;
+}
+
+form{
+    width: 90%;
+}
+
+
+.signup-form {
+    z-index: 11;
+    font-family: $primary-font;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(104, 117, 130, 0.10);
+    // box-shadow: 0px 4px 30px 0px rgba(104, 117, 130, 0.10); figma
+    padding: 40px 0;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    @include Display($display: flex, $flex-direction: column, $justify-content: center, $align-items: center);
+}
+
+.form-header{
+
+    margin-bottom: 30px;
+    h2 {
+        color:  #252F3F;
+        line-height: 2;
+        font-size: 1.7rem;
+        font-weight: 900;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: $Light-gray;
+    }
+}
+
+.content-container{
+    width: 100%;
+    margin-bottom: 30px;
+    @include Display($display: flex, $flex-direction: column, );
+    // display: flex;
+    // flex-direction: column;
+    
+    label{
+        color: #6B7280;
+        // line-height: 2;
+        font-size: 15px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .input-field {
+        background:  #F4F5F7;
+        width: auto;
+        padding: 15px 10px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        
+    }
+
+    .input-field:focus {
+        outline: none;
+        border: 2px solid #034EA2;
+    }
+}
+
+.forgot-password-container{
+    @include Display($display: flex, $justify-content: right);
+    // text-align: right;
+    margin-top: 15px;
+    img{
+      width: 30px;
+      padding-right: 10px;
+    }
+
+    label{
+        text-decoration: none;
+        color: #6B7280;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+}
+
+.button-container{
+    width: 100%;
+    margin-bottom: 30px;
+    @include Display($display: flex, $flex-direction: column,);
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+        background-color:  #034EA2;
+        color: #fff;
+        font-family: $primary-font;
+        border: none;
+        border-radius: 3px;
+        padding: 15px 10px;
+        width: 100%;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 300;
+        color: $Light-gray;
+    }
+
+    a{
+        text-decoration: none;
+        color:  #252F3F;
+        font-size: 1.1rem;
+        font-weight: 700; 
+    }
+}
+
+
+.error-message{
+    color: red;
+}
+
+.success-message{
+    color: green;
+
+}
+
+.message-box{
+    text-align: center !important;
+    font-family: $primary-font;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+// .animate1{
+//     position: relative;
+//     width: max-content;
+//     font-size: 1.2rem; 
+// }
+
+// .animate1::before,
+// .animate1::after{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+// }
+
+// .animate1::before{
+//     background: $Black;
+//     animation: typewriter 1.5s steps(4) 0.5s forwards;
+// }
+// .animate1::after{
+//     width: 2px;
+//     background: $Green;
+//     animation: typewriter 1.5s steps(4) 0.5s forwards,
+//      blink 500ms steps(4) infinite,
+//      cursorFadeOut 0.5s linear 2s forwards;
+// }
+
+// // animation2
+// .animate2{
+//     position: relative;
+//     width: max-content;
+// }
+// .animate2::before,
+// .animate2::after{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+// }
+
+// .animate2::before{
+//     background: $Black;
+//     animation: typewriter 2.5s steps(10) 2s forwards;
+// }
+// .animate2::after{
+//     width: 2px;
+//     background: $Green;
+//     animation: typewriter 2.5s steps(10) 2s forwards,
+//     cursorFadeOut 0.5s linear -1s forwards,
+//     cursorFadeIn 0.5s linear 2s forwards,
+//     blink 500ms steps(10) infinite,
+//     cursorFadeOut 0.5s linear 5s forwards;
+//     // animation-duration: 6.5s; /* Total duration for all animations */
+// }
+
+// .animate3{
+
+//     position: relative;
+//     width: max-content;
+// }
+// .animate3::before,
+// .animate3::after{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+// }
+
+// .animate3::before{
+//     background: $Black;
+//     animation: typewriter 2.5s steps(8) 5s forwards;
+// }
+// .animate3::after{
+//     width: 2px;
+//     background: $Green;
+//     animation: typewriter 2.5s steps(8) 5s forwards,
+//     cursorFadeOut 0.5s linear -1s forwards,
+//     cursorFadeIn 0.5s linear 5s forwards,
+//     blink 500ms steps(8) infinite,
+//     cursorFadeOut 0.5s linear 9s forwards;
+//     // animation-duration: 6.5s; /* Total duration for all animations */
+// }
+
+// @keyframes typewriter {
+//     to{
+//         left: 100%;
+//     }
+// }
+
+// @keyframes blink{
+//     to{
+//         background: transparent;
+//     }
+// }
+
+// @keyframes cursorFadeOut {
+//     to {
+//         opacity: 0;
+//     }
+// }
+// @keyframes cursorFadeIn {
+//     to {
+//         opacity: 1;
+//     }
+// }
+
+
+// @keyframes fadeInUp {
+//     to{
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./Assests/styles/main.css">
+    <link rel="stylesheet" href="./Assests/styles/css/all.css">
+</head>
+<body class="form-body">
+
+    <div class="signup-form">
+        <form id="myform" action="#" method="post">
+            <div class="content-container">
+                <span class="message-box" id="signup-message-box"></span>
+            </div>
+
+            <div class="form-header">
+                <h2>Sign Up</h2>
+                <p>Create an Account and Join Us Today</p>
+            </div>
+
+            <div class="content-container">
+                <label for="email">Email</label>
+                <input  id="email" class="input-field" name="email" type="email">
+            </div>
+
+            <div class="content-container">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" class="input-field">
+                <!-- <input type="checkbox" id="show-password-checkbox">
+                <label for="show-password-checkbox">Show Password</label> -->
+            </div>
+
+            <div class="button-container">
+                <button type="submit" value="submit" id="register" class="btn">Sign Up</button>
+                <!-- <input type="submit" value="Sign Up" class="btn"> -->
+                <p class="text">Already have an acount! <a class="link" href="./Pages/login.html"> Login</a></p>   
+            </div>
+        </form>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+<script src="./Assests/Javascript/modules/firebase-config.js"></script>
+<script src="./Assests/Javascript/modules/register.js"></script>
+
+
+</body>
+</html>

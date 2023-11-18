@@ -1,0 +1,35 @@
+.bd{
+    margin: 0;
+    background-image: url("../IMG/forest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    @include Display($display: flex, $align-items: center, $justify-content: center, $flex-direction: column);
+    position: relative;
+
+    h1{
+        color: #BFBCBA;
+        font-family: $primary-font;
+        text-align: center;
+    }
+
+    h2{
+        color: #BFBCBA;
+        font-family: $primary-font;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    button{
+        background-color: #A62447;
+        color: #BFBCBA;
+        border: 1px solid transparent;
+        padding: 12px 2rem;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+}
+

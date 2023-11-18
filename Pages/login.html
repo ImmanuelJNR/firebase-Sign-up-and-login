@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Assests/styles/main.css">
+    <link rel="stylesheet" href="./Assests/styles/css/all.css">
+</head>
+
+
+<body class="form-body">
+
+    <div class="signup-form">
+        <form id="login-form" action="#" method="post">
+            <div class="content-container">
+                <span class="message-box" id="login-message-box"></span>
+            </div>
+
+            <div class="form-header">
+                <h2>Sign In</h2>
+                <p>Welcome back! Login to proceed</p>
+            </div>
+
+            <div class="content-container">
+                <label for="login-email">Email</label>
+                <input  id="login-email" class="input-field" name="email" type="email">
+            </div>
+
+            <div class="content-container">
+                <label for="login-password">Password</label>
+                <input id="login-password" name="password" type="password" class="input-field">
+                <div class="  forgot-password-container">
+                    <img src="../Assests/IMG/Product/Vector.svg" class="vector" alt="">
+                    <label id="forgotPassword">forgot password?</label>
+                </div>
+            </div>
+
+
+            <div class="button-container">
+                <button type="submit" value="submit" id="login-btn" class="btn">Sign In</button>
+                <!-- <input type="submit" value="Sign In" id="login-btn" class="btn"> -->
+                <p class="text">Don't have an acount! <a class="link" href="../index.html"> Sign Up</a></p>   
+            </div>
+        </form>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script> -->
+    <!-- <script src="../Assests/Javascript/modules/login.js"></script> -->
+    <!-- <script src="./Assests/Javascript/modules/whatsapp.js"></script> -->
+    <!-- <script src="./Assests/Javascript/index.js" type="module"></script> -->
+    <!-- <script src="./Assests/Javascript/main.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <script src="../Assests/Javascript/modules/firebase-config.js"></script>
+    <script src="../Assests/Javascript/modules/login.js"></script>
+    <script src="../Assests/Javascript/modules/password-reset.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-body {
+  background-color: #F9FAFB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  width: 90%;
+}
+
+.signup-form {
+  z-index: 11;
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(104, 117, 130, 0.1);
+  padding: 40px 0;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-header {
+  margin-bottom: 30px;
+}
+.form-header h2 {
+  color: #252F3F;
+  line-height: 2;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.form-header p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6B7280;
+}
+
+.content-container {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.content-container label {
+  color: #6B7280;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.content-container .input-field {
+  background: #F4F5F7;
+  width: auto;
+  padding: 15px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.content-container .input-field:focus {
+  outline: none;
+  border: 2px solid #034EA2;
+}
+
+.forgot-password-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 15px;
+}
+.forgot-password-container img {
+  width: 30px;
+  padding-right: 10px;
+}
+.forgot-password-container label {
+  text-decoration: none;
+  color: #6B7280;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.button-container {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+.button-container .btn {
+  background-color: #034EA2;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.button-container .btn:hover {
+  background-color: #0056b3;
+}
+.button-container p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6B7280;
+}
+.button-container a {
+  text-decoration: none;
+  color: #252F3F;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+
+.message-box {
+  text-align: center !important;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.bd {
+  margin: 0;
+  background-image: url("../IMG/forest.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.bd h1 {
+  color: #BFBCBA;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.bd h2 {
+  color: #BFBCBA;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.bd button {
+  background-color: #A62447;
+  color: #BFBCBA;
+  border: 1px solid transparent;
+  padding: 12px 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}/*# sourceMappingURL=main.css.map */
